@@ -5,12 +5,14 @@ body {
     padding: 0;
     background-color: #fff;
     color: #000;
+    padding-bottom: 40px; /* This ensures there is space at the bottom of the page */
 }
 
 /* Container for each section */
 .section {
     padding: 50px 20%;
     text-align: center;
+    margin-bottom: 20px; /* Adjust as needed to give more space at the bottom */
 }
 
 /* Header Styles */
@@ -44,10 +46,40 @@ p {
     background-color: #f0f0f0;
 }
 
-/* Footer Styles */
+/* Table styles */
+table {
+    width: 100%;
+    border-collapse: collapse; /* Eliminate gaps between borders */
+    margin: 20px 0; /* Add some space above and below the table */
+    font-size: 0.9em; /* Adjust font size for table */
+}
+
+th, td {
+    padding: 12px 15px; /* Add padding to table cells */
+    border-bottom: 1px solid #dddddd; /* Add a bottom border to each cell */
+    text-align: left; /* Align text to the left side of the cell */
+}
+
+th {
+    background-color: #000; /* Header background color */
+    color: #fff; /* Header font color */
+    font-weight: normal; /* Make the font weight normal */
+}
+
+tbody tr:nth-child(odd) {
+    background-color: #f8f8f8; /* Zebra stripe color for odd rows */
+}
+
+tbody tr:hover {
+    background-color: #f1f1f1; /* Color when mouse hovers over a row */
+}
+
+/* Footer styles */
 footer {
-    background-color: #000;
-    color: #fff;
-    padding: 10px 0;
-    text-align: center;
+    text-align: center; /* Center the footer content */
+    padding: 10px 0; /* Padding for the footer */
+    background-color: #000; /* Footer background color */
+    color: #fff; /* Footer font color */
+    /* Remove position: absolute and bottom: 0; */
+    width: 100%;
 }
