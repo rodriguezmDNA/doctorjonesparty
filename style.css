@@ -15,16 +15,46 @@ body {
     margin-bottom: 20px; /* Adjust as needed to give more space at the bottom */
 }
 
-/* Header Styles */
 header {
-    display: flex;
-    text-align: center;
-    justify-content: center; /* Horizontally center the content */
-    align-items: center; /* Vertically center the content */
-    background-color: #000;
-    color: #fff;
-    height: 350px; /* Increased height */
-    padding: 20px; /* Added padding */
+    background-color: #000; /* Assuming a dark theme from the image */
+    color: #fff; /* White text for contrast */
+    text-align: center; /* Center align the text */
+    padding: 40px 0; /* Top and bottom padding */
+}
+
+.header-content h1,
+.header-content h2 {
+    margin: 0; /* Removes default margin */
+    padding: 10px 0; /* Adds some space between the elements */
+}
+
+.invitation {
+    margin: 20px 0; /* Adds space above and below the invitation text */
+    font-size: 1.1em; /* Slightly larger font size for legibility */
+    color: #fff; /* White text for contrast */
+}
+
+.event-details {
+    background-color: #ffffff; /* Slightly lighter than the header background for contrast */
+    padding: 20px 0; /* Padding inside the event details area */
+    margin-top: 30px; /* Space from the invitation text to the event details */
+    display: inline-block; /* Allows the background to wrap content */
+    width: auto; /* Auto width based on content size */
+}
+
+.event-details p {
+    margin: 10px 20px; /* Vertical margin and horizontal padding */
+    font-size: 0.9em; /* Adjust font size as needed */
+}
+
+.note {
+    font-style: italic; /* Italicize the note */
+    margin-top: 15px; /* Space above the note */
+}
+
+.note a {
+    color: #4a90e2; /* Bright color for the link for visibility */
+    text-decoration: none; /* Removes underline */
 }
 
 header h1 {
@@ -83,4 +113,46 @@ footer {
     color: #fff; /* Footer font color */
     /* Remove position: absolute and bottom: 0; */
     width: 100%;
+}
+
+
+nav {
+    background-color: white; /* Set the background color to white */
+    text-align: center; /* Center the content */
+    padding: 20px 0; /* Add some padding for spacing */
+    position: sticky; /* Make the TOC stick at the top when scrolling */
+    top: 0; /* Position it at the top */
+    z-index: 1000; /* Ensure it sits above other content */
+    border-bottom: 1px solid #ccc; /* Optional: adds a subtle line to separate the TOC from the content below */
+}
+
+nav ul {
+    list-style: none; /* Remove default list styling */
+    padding: 0; /* Remove default padding */
+    margin: 0 auto; /* Center the list */
+    display: inline-block; /* Center the list items */
+}
+
+nav li {
+    display: inline; /* Display list items inline */
+    margin-right: 15px; /* Space between items */
+}
+
+nav a {
+    
+    color: #000; /* Set link color */
+    padding: 5px; /* Add some padding to links */
+    border-radius: 5px; /* Optional: rounded corners for links */
+    transition: background-color 0.3s; /* Smooth transition for hover effect */
+}
+
+nav a:hover {
+    background-color: #f0f0f0; /* Color change on hover */
+}
+
+#return-to-top {
+    position: fixed; /* Keeps the link visible */
+    bottom: 20px; /* Distance from the bottom of the viewport */
+    right: 20px; /* Distance from the right of the viewport */
+    /* Additional styles */
 }
