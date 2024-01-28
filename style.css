@@ -1,0 +1,53 @@
+/* Global Styles */
+body {
+    font-family: 'Helvetica Neue', Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #fff;
+    color: #000;
+}
+
+/* Container for each section */
+.section {
+    padding: 50px 20%;
+    text-align: center;
+}
+
+/* Header Styles */
+header {
+    display: flex;
+    justify-content: center; /* Horizontally center the content */
+    align-items: center; /* Vertically center the content */
+    background-color: #000;
+    color: #fff;
+    height: 350px; /* Increased height */
+    padding: 20px; /* Added padding */
+}
+
+header h1 {
+    margin: 0; /* Keeps the header text from having default margin */
+}
+
+/* Section Heading Styles */
+.section h2 {
+    color: #000;
+    margin: 0 0 20px 0;
+}
+
+/* Paragraph Styles */
+p {
+    color: #333;
+}
+
+/* Styling for alternating section backgrounds */
+.section:nth-child(even) {
+    background-color: #f0f0f0;
+}
+
+/* Footer Styles */
+footer {
+    background-color: #000;
+    color: #fff;
+    padding: 10px 0;
+    text-align: center;
+}
